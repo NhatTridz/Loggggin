@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+     margin-top: 100px;
+     background: linear-gradient(to right, #92FEFF, #84FFC5);
+  }
+    .khung {
+      padding: 20px;
+      border: 2px solid;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      animation: monhat 3s;
+    }
+    @keyframes monhat {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    h1 {
+      margin-bottom: 50px;
+      text-align: center;
+      animation: dilen 1.5s;
+    }
+    @keyframes dilen {
+      0% {transform: translateY(200px);}
+      70% {transform: translateY(-30px);}
+      100% {transform: translateY(0);}
+    }
+    .nhapten {
+      color: #000000;
+      font-size: 17px;
+      margin: 10px;
+      animation: motutu 7s;
+    }
+    @keyframes motutu {
+      0% {opacity: 0;
+      }
+      100% {opacity: 1;}
+    }
+      .ghiten {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 10px 50px;
+      margin: 0 0 0 10px;
+      animation: dixuong 2s;
+    }
+    @keyframes dixuong {
+      0% {transform: translateY(-100px);}
+      100% {transform: translateY(0);}
+    }
+    .ghimk {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 10px 50px;
+      margin: 0 0 0 10px;
+      animation: didi 2s;
+    }
+    @keyframes didi {
+      0% {transform: translateY(100px);}
+      100% {transform: translateY(0);}
+    }
+    button {
+      padding: 8px 20px;
+      margin: 20px 0 20px 100px;
+      border: 1px solid black;
+      border-radius: 10px;
+      animation: bamm 2s;
+    }
+    @keyframes bamm {
+      0% {transform: translateY(-70px);}
+      70% {transform: translateY(25px);}
+      100% {transform: translateY(0);}
+    }
+    a {
+      text-decoration: none;
+    }
+    .aa {
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="khung">
+    <h1>Đăng nhập </h1>
+    <label for="ten" class="nhapten">Tên người dùng </label><br>
+    <input id="ten" class="ghiten" type="text" placeholder="Nhập tên người dùng" required ><br><br>
+    <div>
+    <label class="nhapten" for="mk">Mật khẩu </label><br>
+    <input id="mk" class="ghimk" type="password" placeholder="Nhập mật khẩu" required >
+    </div>
+    <br>
+    <button>Đăng nhập </button><br>
+    <a href="#" class="aa">Quên mật khẩu?</a><br>
+    <p>Không có tài khoản?<a href="#">Tạo tài khoản</a></p>
+  </div>
+</body>
+
+</html>
